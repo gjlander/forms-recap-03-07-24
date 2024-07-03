@@ -13,6 +13,87 @@
     </head>
     <body class="p-6">
         <h1 class="text-6xl text-center mb-8">Forms!</h1>
+        <form id="search-form">
+            <h2 class="text-4xl my-4">Search for a country</h2>
+            <label for="search-input">Search: </label>
+            <input
+                class="input input-bordered mr-2"
+                type="search"
+                name="search-input"
+                id="search-input"
+                placeholder="Country name..."
+            />
+            <button class="btn" type="submit">Search</button>
+        </form>
+        <ol id="results-list" class="list-decimal"></ol>
+        <form
+            id="sign-up-form"
+            class="flex flex-col gap-4 border-2 rounded p-6 w-1/2 my-4"
+        >
+            <h2 class="text-4xl m-4">Sign Up</h2>
+            <label for="first-name">Fist Name</label>
+            <input
+                type="text"
+                name="first-name"
+                id="first-name"
+                class="input input-bordered"
+                required
+            />
+            <label for="last-name">Last Name</label>
+            <input
+                type="text"
+                name="last-name"
+                id="last-name"
+                class="input input-bordered"
+                required
+            />
+            <label for="email">Email</label>
+            <input
+                id="email"
+                name="email"
+                class="input input-bordered"
+                type="email"
+                required
+            />
+            <label for="password">Password</label>
+            <input
+                id="password"
+                name="password"
+                class="input input-bordered"
+                type="password"
+                required
+            />
+            <label for="profile-pic">Profile Pic</label>
+            <input
+                id="profile-pic"
+                name="profile-pic"
+                class="input input-bordered"
+                type="url"
+                required
+            />
+            <fieldset class="flex flex-col gap-4 border p-3">
+                <legend>Choose Account Type</legend>
+                <div>
+                    <input
+                        type="radio"
+                        name="account-type"
+                        id="student"
+                        value="Student"
+                    />
+                    <label for="student">Student</label>
+                </div>
+                <div>
+                    <input
+                        type="radio"
+                        name="account-type"
+                        id="alumni"
+                        value="Alumni"
+                    />
+                    <label for="alumni">Alumni</label>
+                </div>
+            </fieldset>
+            <button class="btn" type="submit">Sign Up</button>
+        </form>
         <script src="index.js"></script>
     </body>
 </html>
